@@ -1,0 +1,85 @@
+/* SQUARES */
+
+.coral {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    animation: coral 2s ease forwards;
+}
+
+.blue {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    animation: blue 2s ease forwards;
+}
+
+.green {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    animation: green 2s ease forwards;
+}
+
+.yellow {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    animation: yellow 2s ease forwards;
+}
+
+
+/* TRANSITIONS */
+
+div:hover {
+    box-sizing: border-box;
+    border: 3px solid white;
+    transition: 1s;
+}
+
+
+/* KEYFRAMES */
+
+@keyframes coral {
+    0% { top: 0; 
+        left: 0; 
+        background-color: lightcoral;
+        border-radius: 0 0 0 0; }
+    100% { top: 50%; 
+        left: 50%; 
+        background-color: black;
+        border-radius: 0 0 100% 0; }
+}
+
+@keyframes blue {
+    0% { top: 0; 
+        right: 0; 
+        background-color: lightblue;
+        border-radius: 0 0 0 0; }
+    100% { top: 50%; 
+        right: 50%; 
+        background-color: black;
+        border-radius: 0 0 0 100%; }
+}
+
+@keyframes green {
+    0% { bottom: 0; 
+        left: 0; 
+        background-color: lightgreen;
+        border-radius: 0 0 0 0; }
+    100% { bottom: 50%; 
+        left: 50%; 
+        background-color: black;
+        border-radius: 0 100% 0 0; }
+}
+
+@keyframes yellow {
+    0% { bottom: 0; 
+        right: 0; 
+        background-color: lightgoldenrodyellow;
+        border-radius: 0 0 0 0; }
+    100% { bottom: 50%; 
+        right: 50%; 
+        background-color: black;
+        border-radius: 100% 0 0 0; }
+}
